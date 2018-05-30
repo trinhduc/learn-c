@@ -7,11 +7,11 @@ int main()
 {
 	int array [6] = {1, 5, 6, 2, 4, 8};
 	char ArrayCore [] = "ArrayCore";
-	char *ArrayC  = ArrayCore;
+	// char *ArrayC  = ArrayCore;
 
 	int array_copy [6] = {0};
 	char ArrayCopy [] = "ArrayCopy";
-	char *ArrayCy = ArrayCopy;
+	// char *ArrayCy = ArrayCopy;
 
 	int sum = 0;
 	double average_value = 0;
