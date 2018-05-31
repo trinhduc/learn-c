@@ -13,6 +13,8 @@ int main (int argc , char *argv[])
 	cout << "*chuoi: " << *chuoi << endl; // Alway return first element int array
 	cout << "&chuoi: " << &chuoi << endl;
 	cout << "This string " << chuoi << " have length is: " << length_str << endl;
+	cout << "error at line " << __LINE__ << " in file " << __FILE__ << endl;
+	cout << "This file compilation on " <<__DATE__ << " at " << __TIME__ << endl;
 	return 0;
 }
 
