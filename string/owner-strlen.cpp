@@ -1,5 +1,7 @@
 #include <iostream>
 
+#define SAY_HI() cout << "Rat vui khi gap lai ban" << endl;
+
 using namespace std;
 
 long do_dai_chuoi(char *chuoi);
@@ -9,6 +11,9 @@ int main (int argc , char *argv[])
 	char chuoi [] = "Bonjour";
 	long length_str = 0;
 	length_str = do_dai_chuoi(chuoi);
+
+	SAY_HI()
+
 	cout << "chuoi: " << chuoi << endl;
 	cout << "*chuoi: " << *chuoi << endl; // Alway return first element int array
 	cout << "&chuoi: " << &chuoi << endl;
