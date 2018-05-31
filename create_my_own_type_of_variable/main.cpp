@@ -6,8 +6,8 @@ using namespace std;
 
 int main (int argc, char *argv[])
 {
-	vitridiem diemA;
-	taikhoan khachhang;
+	vitridiem diemA = {0, 0};
+	taikhoan khachhang = {"", "", "", 0, 0};
 
 	diemA.x = 16;
 	diemA.y = 05;
@@ -15,7 +15,7 @@ int main (int argc, char *argv[])
 	cout << "Toa do x cua diem A la: " << diemA.x << endl;
 	cout << "Toa do y cua diem A la: " << diemA.y << endl;
 	cout << endl;
-	
+
 	cout << "Moi nhap ten: ";
 	cin >> khachhang.ten;
 	cout << "Ho cua ban: ";
