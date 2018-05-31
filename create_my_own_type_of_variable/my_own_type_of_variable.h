@@ -25,3 +25,6 @@ typedef struct {
 	int tuoi;
 	int gioitinh; //1 = nam, 0 = nu
 }taikhoan;
+
+
+void taoToadodiem(vitridiem *poiterdiemB);

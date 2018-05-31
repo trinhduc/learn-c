@@ -8,6 +8,7 @@ int main (int argc, char *argv[])
 {
 	vitridiem diemA = {0, 0};
 	taikhoan khachhang = {"", "", "", 0, 0};
+	vitridiem diemB = {0, 0};
 
 	diemA.x = 16;
 	diemA.y = 05;
@@ -22,5 +23,8 @@ int main (int argc, char *argv[])
 	cin >> khachhang.ho;
 
 	cout << "Họ tên đầy đủ của khách hàng là: " << khachhang.ho << " " << khachhang.ten << endl;
+
+	taoToadodiem(&diemB);
+
 	return 0;
 }
