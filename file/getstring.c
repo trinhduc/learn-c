@@ -5,19 +5,38 @@
 
 int main (int argc, char *argv[])
 {
-	FILE *file_text = NULL;
+	FILE *fp = NULL;
 	char get_string[MAX_NUMBER_CHAR] = "";
+	int c =0;
+	int count =0;
 
-	file_text = fopen("file_text/file_source.txt", "r+"); // "r+"" : it mean read and write into file. If "r" it is only read
+	fp = fopen("file_text/file_source.txt", "r+"); // "r+"" : it mean read and write into file. If "r" it is only read
+	
+	// printf("getc: %d\n", getc(fp));	
 
-// This is only first line
-	if (file_text != NULL){
-		while(fgets(get_string, MAX_NUMBER_CHAR, file_text) != NULL){
-		printf("%s\n", get_string);
+	// for (c = getc(fp); c != EOF; c = getc(fp)){
+ //        if (c != '\n' && c != ' '){ // Increment count if this character is newline
+ //        	printf("getc %d in for: %d\n", count, getc(fp));	
+ //            count ++;
+ // 		}
+ // 	}
+
+	if (fp != NULL){
+		while(fgets(get_string, MAX_NUMBER_CHAR, fp) != NULL){
+		printf("%s", get_string);
+
 		}
 
-		fclose(file_text);
+		fclose(fp);
 	}
 
 	return 0;
 }
+
+/* Sẽ viết từng module về file luôn
+	+ Đếm số ký tự
+	+ Đếm số từ
+	+ Đếm số dòng
+	+ Hàm random chọn dòng
+	+ Tìm một ký tự
+*/
